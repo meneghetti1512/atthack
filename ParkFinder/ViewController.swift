@@ -17,8 +17,6 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
     }
     private let locationManager = CLLocationManager()
     
@@ -40,36 +38,5 @@ class ViewController: UIViewController{
     }
     
 }
-
-
-extension ViewController: CLLocationManagerDelegate {
-    // 2
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        // 3
-        guard status == .authorizedWhenInUse else {
-            return
-        }
-        // 4
-        locationManager.startUpdatingLocation()
-        
-        //5
-        view.isMyLocationEnabled = true
-        view.settings.myLocationButton = true
-    }
-    
-    // 6
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.first else {
-            return
-        }
-        
-        // 7
-        view.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
-        
-        // 8
-        locationManager.stopUpdatingLocation()
-    }
-}
-
 
 
