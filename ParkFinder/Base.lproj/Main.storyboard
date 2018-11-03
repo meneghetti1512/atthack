@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BkJ-bd-gEy">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -24,6 +24,112 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
+        </scene>
+        <!--Results Controller-->
+        <scene sceneID="VWX-CP-wTp">
+            <objects>
+                <viewController id="BkJ-bd-gEy" customClass="ResultsController" customModule="ParkFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xSZ-Xu-I0i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkC-HZ-fNm">
+                                <rect key="frame" x="61" y="98" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Parking Lot"/>
+                                <connections>
+                                    <action selector="parking_lot_button:" destination="BkJ-bd-gEy" eventType="touchUpInside" id="teX-4D-aME"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaB-mj-HIW">
+                                <rect key="frame" x="216" y="98" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Private Parking"/>
+                                <connections>
+                                    <action selector="parking_lot_button:" destination="BkJ-bd-gEy" eventType="touchUpInside" id="OGA-8G-cm8"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="C7W-M7-zXh">
+                                <rect key="frame" x="47.666666666666657" y="165" width="280" height="551"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Bs-Uc-HEU">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parking Lot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zum-Lh-6zm">
+                                                <rect key="frame" x="97" y="54" width="86" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.97680455450000003" green="0.0" blue="0.045687920719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkU-4g-aYs">
+                                        <rect key="frame" x="0.0" y="141" width="280" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Private Parking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNt-vf-vzM">
+                                                <rect key="frame" x="83" y="54" width="115" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.98150008919999998" green="0.79117065669999997" blue="0.20054185390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LkP-mB-Yek">
+                                        <rect key="frame" x="0.0" y="282" width="280" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parking Lot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdf-nf-dpJ">
+                                                <rect key="frame" x="97" y="54" width="86" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.13768847209999999" green="0.1727450301" blue="0.39250872460000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="04V-jO-juA">
+                                        <rect key="frame" x="0.0" y="423" width="280" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Private Parking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29z-hs-fbI">
+                                                <rect key="frame" x="83" y="54" width="115" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.025092230900000002" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5Bs-Uc-HEU" firstAttribute="centerX" secondItem="C7W-M7-zXh" secondAttribute="centerX" id="1jA-xf-ENh"/>
+                                    <constraint firstItem="mkU-4g-aYs" firstAttribute="top" secondItem="C7W-M7-zXh" secondAttribute="top" constant="141" id="5qu-te-DQG"/>
+                                    <constraint firstItem="LkP-mB-Yek" firstAttribute="top" secondItem="C7W-M7-zXh" secondAttribute="top" constant="282" id="Bkx-0h-7Uq"/>
+                                    <constraint firstItem="04V-jO-juA" firstAttribute="top" secondItem="C7W-M7-zXh" secondAttribute="top" constant="423" id="dxb-qH-elh"/>
+                                    <constraint firstItem="5Bs-Uc-HEU" firstAttribute="top" secondItem="C7W-M7-zXh" secondAttribute="top" id="iA2-GN-gbA"/>
+                                    <constraint firstAttribute="width" constant="280" id="pAD-YL-P2J"/>
+                                    <constraint firstAttribute="height" constant="551" id="wE0-oL-0Ie"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iO5-YY-L49" firstAttribute="bottom" secondItem="C7W-M7-zXh" secondAttribute="bottom" constant="62" id="H4i-bX-OUh"/>
+                            <constraint firstItem="C7W-M7-zXh" firstAttribute="centerX" secondItem="xSZ-Xu-I0i" secondAttribute="centerX" id="lte-Ro-slP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iO5-YY-L49"/>
+                    </view>
+                    <connections>
+                        <outlet property="parking_lot" destination="OkC-HZ-fNm" id="sWf-z2-XQU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lYb-6P-wDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048.8" y="132.26600985221674"/>
         </scene>
     </scenes>
 </document>
