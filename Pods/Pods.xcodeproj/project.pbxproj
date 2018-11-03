@@ -12,38 +12,48 @@
 		19B7D907FC5400691F2109A7E26E7997 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		3370E8F895F815CD41399A4C5A11DAD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		6141614B5CF72326E5DCD1EB512F594A /* Pods-ParkFinderTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D10EDE640EA5680CDB0FC4BC05DADC21 /* Pods-ParkFinderTests-dummy.m */; };
-		769ED42821F900911B3C6B7351E4F18C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		6B93EC4C51CD5D50CAD4D2CE4A712156 /* WARangeSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B576E4F654A095D5F5E3C70DDBE275E3 /* WARangeSlider-dummy.m */; };
 		77FC88012312ED0EF39307975D7849D3 /* Pods-ParkFinderUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1B73EF741DC58D9C874AFE1D16D7446 /* Pods-ParkFinderUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5EA15159AAF3898042AE073D0086AC0 /* Pods-ParkFinder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 138A7A98AC136E3C3B96764C0A2A1EE2 /* Pods-ParkFinder-dummy.m */; };
-		F00411E91A6A244FBE139542871EB031 /* Pods-ParkFinder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCB5F787718931F07031232CEFA3F129 /* Pods-ParkFinder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F68DEC453C33E5AFE76AE84BCF66B61 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400C60AFE583FFACF31165D9589CA557 /* RangeSlider.swift */; };
+		9545F77489716CDE44A4639AE61567F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		B236B2857CD7B635341D90D5C768C08D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		BFA2C1535ED7CB9B2DAA607C6D4DB841 /* Pods-ParkFinder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 138A7A98AC136E3C3B96764C0A2A1EE2 /* Pods-ParkFinder-dummy.m */; };
+		D16D0E77284CBEB9C1F473F1C3F679BF /* Pods-ParkFinder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCB5F787718931F07031232CEFA3F129 /* Pods-ParkFinder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDF12C0E1A3CE6359E653793645E5D19 /* WARangeSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B469E90256C5D4AE91DE0BF2422BF526 /* WARangeSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		40D3E55A146A2DC907A1AF03220F15F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9707C74258F3D1D144E3C3B90C452E04;
+			remoteInfo = WARangeSlider;
+		};
 		CE214D3138BAD18FDDFD2D32E674D79C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8270C76B137C2B13A6CC931AEB78795A;
+			remoteGlobalIDString = 767760BF0E997EBD6765A5C5D19978B1;
 			remoteInfo = "Pods-ParkFinder";
 		};
 		FD880000D8F66B9C1C26EB20F14D2709 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8270C76B137C2B13A6CC931AEB78795A;
+			remoteGlobalIDString = 767760BF0E997EBD6765A5C5D19978B1;
 			remoteInfo = "Pods-ParkFinder";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0337E7B23720AD7B1E77A2E52FD1C77D /* Pods_ParkFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParkFinder.framework; path = "Pods-ParkFinder.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		08F1229163C7F5E61C7C4B361510F11C /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
 		101ED6696D14C04F89970FD23A147FFF /* Pods-ParkFinderTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParkFinderTests-resources.sh"; sourceTree = "<group>"; };
 		138A7A98AC136E3C3B96764C0A2A1EE2 /* Pods-ParkFinder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParkFinder-dummy.m"; sourceTree = "<group>"; };
-		13F792AAEAD89D258ABDAA255414280C /* Pods_ParkFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParkFinderTests.framework; path = "Pods-ParkFinderTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C6200385182862E9168588E60B1CD37 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		17E9EFEDB0CD1EF24CDA3A80FD3E43DB /* Pods_ParkFinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParkFinderUITests.framework; path = "Pods-ParkFinderUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2282244323C3CF8F650DD24D9567A8E9 /* Pods-ParkFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParkFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		24CA54D528E6C6F9548BD10E3127C1A8 /* WARangeSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WARangeSlider.xcconfig; sourceTree = "<group>"; };
 		2B209FBC37045220C9CAEBDF605B9F89 /* Pods-ParkFinderTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ParkFinderTests.modulemap"; sourceTree = "<group>"; };
+		2C3C565B62A38F63E6FA81389F64CAC7 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		2E5F07A480406456EFAD5A6D0420F586 /* Pods-ParkFinderTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParkFinderTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		33DE7BC0C61A67377654536A99E7E95A /* Pods-ParkFinder-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParkFinder-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3406FBE0A51EC521B13A17916C52FF07 /* Pods-ParkFinderTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParkFinderTests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -51,11 +61,15 @@
 		34D914E81A16A9EA87FA9DECDD4ACF6E /* Pods-ParkFinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParkFinderUITests.release.xcconfig"; sourceTree = "<group>"; };
 		36B8EE6C0A659C25F66647BEB3524174 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A2A1198DAC7AEB23DC332123DDCD955 /* Pods-ParkFinderUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParkFinderUITests-frameworks.sh"; sourceTree = "<group>"; };
+		3ACA5746EE85A47B4BB2D659DB84DC6E /* WARangeSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WARangeSlider.framework; path = WARangeSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C98F14D8E21AFAD8BB47BF3D8DB709A /* Pods_ParkFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParkFinderTests.framework; path = "Pods-ParkFinderTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		400C60AFE583FFACF31165D9589CA557 /* RangeSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeSlider.swift; path = RangeSlider/RangeSlider.swift; sourceTree = "<group>"; };
+		52AB6E85F55FC84B3F4239A15491B45F /* WARangeSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WARangeSlider.modulemap; sourceTree = "<group>"; };
 		615449C83107BB5A318F87FC0DE820F5 /* Pods-ParkFinder-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParkFinder-acknowledgements.plist"; sourceTree = "<group>"; };
 		687C78B904BD3D142980CFE8897E3713 /* Pods-ParkFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParkFinder.debug.xcconfig"; sourceTree = "<group>"; };
-		70324FDF1FBB41BEA92DE76E00BD3E96 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
 		745853B6FDF74951E688BBDD4AC3CDC2 /* Pods-ParkFinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParkFinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B3D130EB60D2CDF71B1A67106A7975E /* Pods-ParkFinder-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParkFinder-resources.sh"; sourceTree = "<group>"; };
+		7CCD8F3DCF0257B2330A2A158A63EC4E /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
 		7F04374C65974BDCCDDC67BE3239869E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8151C5855AEB535C0794171EB1B67BED /* Pods-ParkFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParkFinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		8BBE36746E7280D596FF99936AFAB839 /* Pods-ParkFinder-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParkFinder-frameworks.sh"; sourceTree = "<group>"; };
@@ -64,18 +78,23 @@
 		8E5793ECBF74E77FA44F2E9B5B81BCB6 /* Pods-ParkFinder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ParkFinder.modulemap"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3B97DFA1858E3DFE9E113E5C1B23540 /* Pods-ParkFinderUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParkFinderUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A65ED65616C5861E2765BDC60AAAF910 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
-		A92DFDA40F47C0FD221B2872C31099A1 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		A9A01B650736B722D66F9728840C4D9D /* Pods-ParkFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParkFinder.release.xcconfig"; sourceTree = "<group>"; };
 		B1B73EF741DC58D9C874AFE1D16D7446 /* Pods-ParkFinderUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParkFinderUITests-umbrella.h"; sourceTree = "<group>"; };
-		B22C69ADCE7C9D529F11B17B4EF5E065 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		B469E90256C5D4AE91DE0BF2422BF526 /* WARangeSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WARangeSlider-umbrella.h"; sourceTree = "<group>"; };
 		B4B2B52A9515C20A2735D7DF7CD6AD94 /* Pods-ParkFinderUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParkFinderUITests-dummy.m"; sourceTree = "<group>"; };
+		B576E4F654A095D5F5E3C70DDBE275E3 /* WARangeSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WARangeSlider-dummy.m"; sourceTree = "<group>"; };
 		BCB5F787718931F07031232CEFA3F129 /* Pods-ParkFinder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParkFinder-umbrella.h"; sourceTree = "<group>"; };
+		BE53E51D14A3E6FFA697E4D8411D3CC2 /* Pods_ParkFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParkFinder.framework; path = "Pods-ParkFinder.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6B8563B55D676F69573AA949C6BB135 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
 		D0AC97D5FE6F8BC52EF5839CF5308EE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D10406D5641233D6CB8CA0AEFB74723E /* WARangeSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WARangeSlider-prefix.pch"; sourceTree = "<group>"; };
 		D10EDE640EA5680CDB0FC4BC05DADC21 /* Pods-ParkFinderTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParkFinderTests-dummy.m"; sourceTree = "<group>"; };
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DDEEA5FA450454EFFDD5977139F46A07 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
 		DEC93C56F9FA188F8F4DFFDAE89782CA /* Pods-ParkFinderTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParkFinderTests-umbrella.h"; sourceTree = "<group>"; };
-		EDE62B55587A51F60C9F2B052C05CB98 /* Pods_ParkFinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ParkFinderUITests.framework; path = "Pods-ParkFinderUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22058CF7580BB8DD43CC8A7FD23677F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABBE238B0286E95B1D0ECCF0B4DB401 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		FDF9E729B9847BED3020E63B9B5818E1 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		FF79DA6E61C9AF3E84B4671562A337FB /* Pods-ParkFinderUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParkFinderUITests-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,33 +115,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE360DCED1700D5F21D0211E30731B55 /* Frameworks */ = {
+		76CE48B49D40AE0679597C6280974B1E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				769ED42821F900911B3C6B7351E4F18C /* Foundation.framework in Frameworks */,
+				B236B2857CD7B635341D90D5C768C08D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3FE719A999A317A05FCDA5449E7E303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9545F77489716CDE44A4639AE61567F7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00B63D9B3EBC8ECAFD5DA8C24F1A42DF /* GooglePlaces */ = {
+		134988105D1273542B892313DCA6739B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				475420FA59EFC8377CF994A338979247 /* Frameworks */,
-				09DB508F39D8BE758EA4A7B9047268E9 /* Resources */,
+				7CCD8F3DCF0257B2330A2A158A63EC4E /* GoogleMaps.framework */,
+				FDF9E729B9847BED3020E63B9B5818E1 /* GoogleMapsCore.framework */,
 			);
-			name = GooglePlaces;
-			path = GooglePlaces;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		09DB508F39D8BE758EA4A7B9047268E9 /* Resources */ = {
+		135B6F39E8B9193B684A4F37762FD0A8 /* GoogleMaps */ = {
 			isa = PBXGroup;
 			children = (
-				A65ED65616C5861E2765BDC60AAAF910 /* GooglePlaces.bundle */,
+				4424BA33F15FFDE40342977F14A67DFC /* Base */,
+				F571B0068E906B9CA75273A6DF9E587B /* Maps */,
 			);
-			name = Resources;
+			name = GoogleMaps;
+			path = GoogleMaps;
 			sourceTree = "<group>";
 		};
 		1EDBECB06E437E8290D70C147CE15A32 /* Pods-ParkFinderUITests */ = {
@@ -143,31 +171,12 @@
 			path = "Target Support Files/Pods-ParkFinderUITests";
 			sourceTree = "<group>";
 		};
-		26C94CF6FBD559155351548F2127E7DB /* GoogleMaps */ = {
+		4424BA33F15FFDE40342977F14A67DFC /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				B2F22323EA3B1ADB4F96376E3F709A68 /* Base */,
-				488E301C4ACDDA928635C4886F5F6158 /* Maps */,
+				ACE49CFE831D6516D0F578B7243BABBA /* Frameworks */,
 			);
-			name = GoogleMaps;
-			path = GoogleMaps;
-			sourceTree = "<group>";
-		};
-		343584E22C57489C672A8E6F731CB43A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				1C6200385182862E9168588E60B1CD37 /* GoogleMaps.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		385FA015FFB9210F372AB1078B856AAB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				26C94CF6FBD559155351548F2127E7DB /* GoogleMaps */,
-				00B63D9B3EBC8ECAFD5DA8C24F1A42DF /* GooglePlaces */,
-			);
-			name = Pods;
+			name = Base;
 			sourceTree = "<group>";
 		};
 		44D5347904CF754D6785B84253F2574A /* iOS */ = {
@@ -178,39 +187,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		475420FA59EFC8377CF994A338979247 /* Frameworks */ = {
+		651DAF51C193CF1020739EE2F3E7B607 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				70324FDF1FBB41BEA92DE76E00BD3E96 /* GooglePlaces.framework */,
+				135B6F39E8B9193B684A4F37762FD0A8 /* GoogleMaps */,
+				C072D8644560A88D972A0906124A5867 /* GooglePlaces */,
+				BEE31A29C371AD404F9303DEDB64001F /* WARangeSlider */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		488E301C4ACDDA928635C4886F5F6158 /* Maps */ = {
-			isa = PBXGroup;
-			children = (
-				82CE66B3B7EC3F6274BF43A52FEEAE6E /* Frameworks */,
-				343584E22C57489C672A8E6F731CB43A /* Resources */,
-			);
-			name = Maps;
-			sourceTree = "<group>";
-		};
-		4CFA8C2E94378AFFDBA3DF92FBE7E3DC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B22C69ADCE7C9D529F11B17B4EF5E065 /* GoogleMapsBase.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7595D1AD8BAC7AA08C96C29859F095DA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0337E7B23720AD7B1E77A2E52FD1C77D /* Pods_ParkFinder.framework */,
-				13F792AAEAD89D258ABDAA255414280C /* Pods_ParkFinderTests.framework */,
-				EDE62B55587A51F60C9F2B052C05CB98 /* Pods_ParkFinderUITests.framework */,
-			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -218,17 +202,24 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				385FA015FFB9210F372AB1078B856AAB /* Pods */,
-				7595D1AD8BAC7AA08C96C29859F095DA /* Products */,
+				651DAF51C193CF1020739EE2F3E7B607 /* Pods */,
+				C7D9830D15C43CF320F1377EA8E709C9 /* Products */,
 				D7CCF0BF4BD91F9D5367C459049D3839 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		82CE66B3B7EC3F6274BF43A52FEEAE6E /* Frameworks */ = {
+		9004450F9A7224BAAA86F1F852895C16 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				08F1229163C7F5E61C7C4B361510F11C /* GoogleMaps.framework */,
-				A92DFDA40F47C0FD221B2872C31099A1 /* GoogleMapsCore.framework */,
+				C6B8563B55D676F69573AA949C6BB135 /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ACE49CFE831D6516D0F578B7243BABBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDEEA5FA450454EFFDD5977139F46A07 /* GoogleMapsBase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -251,20 +242,51 @@
 			path = "Target Support Files/Pods-ParkFinderTests";
 			sourceTree = "<group>";
 		};
-		B2F22323EA3B1ADB4F96376E3F709A68 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				4CFA8C2E94378AFFDBA3DF92FBE7E3DC /* Frameworks */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				44D5347904CF754D6785B84253F2574A /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEE31A29C371AD404F9303DEDB64001F /* WARangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				400C60AFE583FFACF31165D9589CA557 /* RangeSlider.swift */,
+				F57F0FD47751B58E9F1AD3827D7A14F4 /* Support Files */,
+			);
+			name = WARangeSlider;
+			path = WARangeSlider;
+			sourceTree = "<group>";
+		};
+		C072D8644560A88D972A0906124A5867 /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				E0D8E75DED45F747BBC5B49447C75C9D /* Frameworks */,
+				9004450F9A7224BAAA86F1F852895C16 /* Resources */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		C7D9830D15C43CF320F1377EA8E709C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE53E51D14A3E6FFA697E4D8411D3CC2 /* Pods_ParkFinder.framework */,
+				3C98F14D8E21AFAD8BB47BF3D8DB709A /* Pods_ParkFinderTests.framework */,
+				17E9EFEDB0CD1EF24CDA3A80FD3E43DB /* Pods_ParkFinderUITests.framework */,
+				3ACA5746EE85A47B4BB2D659DB84DC6E /* WARangeSlider.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBBEE35C04CB20ADAAE292BEDAF39B47 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C3C565B62A38F63E6FA81389F64CAC7 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		D7CCF0BF4BD91F9D5367C459049D3839 /* Targets Support Files */ = {
@@ -275,6 +297,37 @@
 				1EDBECB06E437E8290D70C147CE15A32 /* Pods-ParkFinderUITests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E0D8E75DED45F747BBC5B49447C75C9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FABBE238B0286E95B1D0ECCF0B4DB401 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F571B0068E906B9CA75273A6DF9E587B /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				134988105D1273542B892313DCA6739B /* Frameworks */,
+				CBBEE35C04CB20ADAAE292BEDAF39B47 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		F57F0FD47751B58E9F1AD3827D7A14F4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F22058CF7580BB8DD43CC8A7FD23677F /* Info.plist */,
+				52AB6E85F55FC84B3F4239A15491B45F /* WARangeSlider.modulemap */,
+				24CA54D528E6C6F9548BD10E3127C1A8 /* WARangeSlider.xcconfig */,
+				B576E4F654A095D5F5E3C70DDBE275E3 /* WARangeSlider-dummy.m */,
+				D10406D5641233D6CB8CA0AEFB74723E /* WARangeSlider-prefix.pch */,
+				B469E90256C5D4AE91DE0BF2422BF526 /* WARangeSlider-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WARangeSlider";
 			sourceTree = "<group>";
 		};
 		FC91F352905F7456754F10CDB05A9A7B /* Pods-ParkFinder */ = {
@@ -314,11 +367,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB2DF2A86885C9C28CDE18925C8DCD02 /* Headers */ = {
+		A65FE2B9880F479968CF113521169558 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F00411E91A6A244FBE139542871EB031 /* Pods-ParkFinder-umbrella.h in Headers */,
+				D16D0E77284CBEB9C1F473F1C3F679BF /* Pods-ParkFinder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDF8A2EEDE64782EDF032885A463134B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF12C0E1A3CE6359E653793645E5D19 /* WARangeSlider-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +402,7 @@
 			);
 			name = "Pods-ParkFinderUITests";
 			productName = "Pods-ParkFinderUITests";
-			productReference = EDE62B55587A51F60C9F2B052C05CB98 /* Pods_ParkFinderUITests.framework */;
+			productReference = 17E9EFEDB0CD1EF24CDA3A80FD3E43DB /* Pods_ParkFinderUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		259F980C1F6481A7715CE3D2FD03A5DA /* Pods-ParkFinderTests */ = {
@@ -360,25 +421,44 @@
 			);
 			name = "Pods-ParkFinderTests";
 			productName = "Pods-ParkFinderTests";
-			productReference = 13F792AAEAD89D258ABDAA255414280C /* Pods_ParkFinderTests.framework */;
+			productReference = 3C98F14D8E21AFAD8BB47BF3D8DB709A /* Pods_ParkFinderTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8270C76B137C2B13A6CC931AEB78795A /* Pods-ParkFinder */ = {
+		767760BF0E997EBD6765A5C5D19978B1 /* Pods-ParkFinder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F22619A9C06F9DA085D115B4D4033846 /* Build configuration list for PBXNativeTarget "Pods-ParkFinder" */;
+			buildConfigurationList = 938506D717F4CAE9F2237FB3D637AF5E /* Build configuration list for PBXNativeTarget "Pods-ParkFinder" */;
 			buildPhases = (
-				EB2DF2A86885C9C28CDE18925C8DCD02 /* Headers */,
-				321A19F0DA8F89EAE2BEE05C14FDDB1B /* Sources */,
-				EE360DCED1700D5F21D0211E30731B55 /* Frameworks */,
-				0FDC84AF5B2C4A7C6B420E17970DE41F /* Resources */,
+				A65FE2B9880F479968CF113521169558 /* Headers */,
+				5D859E5C536417C48623DD2AC4080522 /* Sources */,
+				76CE48B49D40AE0679597C6280974B1E /* Frameworks */,
+				377823A403F51B55F306D24F6C5485C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4702A60025B6DE5B2CFB95EEEAFC50A5 /* PBXTargetDependency */,
+			);
+			name = "Pods-ParkFinder";
+			productName = "Pods-ParkFinder";
+			productReference = BE53E51D14A3E6FFA697E4D8411D3CC2 /* Pods_ParkFinder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9707C74258F3D1D144E3C3B90C452E04 /* WARangeSlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 400B4C1F3C7143266AF60271A0887774 /* Build configuration list for PBXNativeTarget "WARangeSlider" */;
+			buildPhases = (
+				CDF8A2EEDE64782EDF032885A463134B /* Headers */,
+				5887CEC0783E60C2D8657C0316B667B0 /* Sources */,
+				C3FE719A999A317A05FCDA5449E7E303 /* Frameworks */,
+				C54EFD7EE7569D79A0C80C25190F023A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-ParkFinder";
-			productName = "Pods-ParkFinder";
-			productReference = 0337E7B23720AD7B1E77A2E52FD1C77D /* Pods_ParkFinder.framework */;
+			name = WARangeSlider;
+			productName = WARangeSlider;
+			productReference = 3ACA5746EE85A47B4BB2D659DB84DC6E /* WARangeSlider.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -398,19 +478,20 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7595D1AD8BAC7AA08C96C29859F095DA /* Products */;
+			productRefGroup = C7D9830D15C43CF320F1377EA8E709C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8270C76B137C2B13A6CC931AEB78795A /* Pods-ParkFinder */,
+				767760BF0E997EBD6765A5C5D19978B1 /* Pods-ParkFinder */,
 				259F980C1F6481A7715CE3D2FD03A5DA /* Pods-ParkFinderTests */,
 				047BB7023509C693F40E86293E609ECE /* Pods-ParkFinderUITests */,
+				9707C74258F3D1D144E3C3B90C452E04 /* WARangeSlider */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0FDC84AF5B2C4A7C6B420E17970DE41F /* Resources */ = {
+		377823A403F51B55F306D24F6C5485C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -418,6 +499,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7BB3FB45769991DFEBCFAA8E6D2D4ECD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54EFD7EE7569D79A0C80C25190F023A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -434,19 +522,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		321A19F0DA8F89EAE2BEE05C14FDDB1B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5EA15159AAF3898042AE073D0086AC0 /* Pods-ParkFinder-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		56760FCD3E340E520519EFC92FBBC6AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				16ED694E2CD6CCAE59F83DD7FB983279 /* Pods-ParkFinderUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5887CEC0783E60C2D8657C0316B667B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F68DEC453C33E5AFE76AE84BCF66B61 /* RangeSlider.swift in Sources */,
+				6B93EC4C51CD5D50CAD4D2CE4A712156 /* WARangeSlider-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D859E5C536417C48623DD2AC4080522 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA2C1535ED7CB9B2DAA607C6D4DB841 /* Pods-ParkFinder-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,13 +561,19 @@
 		0F6156A399501FA8802D373CC68E5538 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ParkFinder";
-			target = 8270C76B137C2B13A6CC931AEB78795A /* Pods-ParkFinder */;
+			target = 767760BF0E997EBD6765A5C5D19978B1 /* Pods-ParkFinder */;
 			targetProxy = FD880000D8F66B9C1C26EB20F14D2709 /* PBXContainerItemProxy */;
+		};
+		4702A60025B6DE5B2CFB95EEEAFC50A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WARangeSlider;
+			target = 9707C74258F3D1D144E3C3B90C452E04 /* WARangeSlider */;
+			targetProxy = 40D3E55A146A2DC907A1AF03220F15F4 /* PBXContainerItemProxy */;
 		};
 		F7438EDFFEB3E327A92E68A93DA49396 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ParkFinder";
-			target = 8270C76B137C2B13A6CC931AEB78795A /* Pods-ParkFinder */;
+			target = 767760BF0E997EBD6765A5C5D19978B1 /* Pods-ParkFinder */;
 			targetProxy = CE214D3138BAD18FDDFD2D32E674D79C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -580,12 +683,10 @@
 			};
 			name = Debug;
 		};
-		5C424A586C2DC1F6213CE51509FAC8F7 /* Debug */ = {
+		514670A884152448CB2EEA3206AD29D1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 687C78B904BD3D142980CFE8897E3713 /* Pods-ParkFinder.debug.xcconfig */;
+			baseConfigurationReference = 24CA54D528E6C6F9548BD10E3127C1A8 /* WARangeSlider.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -595,28 +696,28 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ParkFinder/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/WARangeSlider/WARangeSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WARangeSlider/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ParkFinder/Pods-ParkFinder.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/WARangeSlider/WARangeSlider.modulemap";
+				PRODUCT_MODULE_NAME = WARangeSlider;
+				PRODUCT_NAME = WARangeSlider;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		5F2136657C517DB44272469C044A4810 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -719,6 +820,118 @@
 			};
 			name = Release;
 		};
+		8C149D6BF2345CD8625269173388A410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24CA54D528E6C6F9548BD10E3127C1A8 /* WARangeSlider.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WARangeSlider/WARangeSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WARangeSlider/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WARangeSlider/WARangeSlider.modulemap";
+				PRODUCT_MODULE_NAME = WARangeSlider;
+				PRODUCT_NAME = WARangeSlider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9522C906C2417303A5A8CE5E94EDC6F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 687C78B904BD3D142980CFE8897E3713 /* Pods-ParkFinder.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ParkFinder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParkFinder/Pods-ParkFinder.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5956744A4D8127BD787D409BE36E06B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9A01B650736B722D66F9728840C4D9D /* Pods-ParkFinder.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ParkFinder/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParkFinder/Pods-ParkFinder.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		DCDE4B6D1D78CCF52A7E0D31E56554BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 34D914E81A16A9EA87FA9DECDD4ACF6E /* Pods-ParkFinderUITests.release.xcconfig */;
@@ -796,45 +1009,6 @@
 			};
 			name = Debug;
 		};
-		FB9EE54291A6A05D5916D36FF5F9DD05 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9A01B650736B722D66F9728840C4D9D /* Pods-ParkFinder.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ParkFinder/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ParkFinder/Pods-ParkFinder.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -856,20 +1030,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		400B4C1F3C7143266AF60271A0887774 /* Build configuration list for PBXNativeTarget "WARangeSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C149D6BF2345CD8625269173388A410 /* Debug */,
+				514670A884152448CB2EEA3206AD29D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		938506D717F4CAE9F2237FB3D637AF5E /* Build configuration list for PBXNativeTarget "Pods-ParkFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9522C906C2417303A5A8CE5E94EDC6F0 /* Debug */,
+				A5956744A4D8127BD787D409BE36E06B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D22DEA2CFB53C2487CE4380E56BBA7B2 /* Build configuration list for PBXNativeTarget "Pods-ParkFinderUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB89CCD14ED872D4F1EB8CAF0F8903D0 /* Debug */,
 				DCDE4B6D1D78CCF52A7E0D31E56554BA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F22619A9C06F9DA085D115B4D4033846 /* Build configuration list for PBXNativeTarget "Pods-ParkFinder" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5C424A586C2DC1F6213CE51509FAC8F7 /* Debug */,
-				FB9EE54291A6A05D5916D36FF5F9DD05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
