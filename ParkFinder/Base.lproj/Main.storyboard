@@ -87,6 +87,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cgA-rh-mm2"/>
                     </view>
+                    <connections>
+                        <outlet property="list_view" destination="yy4-s8-y6e" id="oo0-Ox-1iw"/>
+                        <outlet property="parking_lot" destination="vGb-gq-YvQ" id="KaB-71-8Wm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3q-yI-m1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

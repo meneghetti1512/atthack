@@ -13,13 +13,17 @@ class result_view: UIView {
     @IBOutlet var view: UIView!
     @IBOutlet weak var type_icon: UIImageView!
     @IBOutlet weak var time_distance: UILabel!
-    @IBOutlet weak var total_price: UILabel!
+    @IBOutlet var total_price: UILabel!
+    
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
-        self.view = (Bundle.main.loadNibNamed("result_view", owner: self, options: nil)?.first as! UIView)
-        self.addSubview(self.view)
+        commonInit()
+    }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
     }
     /*
     // Only override draw() if you perform custom drawing.
@@ -29,4 +33,10 @@ class result_view: UIView {
     }
     */
 
+    func commonInit() {
+        Bundle.main.loadNibNamed("result_view", owner: self, options: nil)
+        addSubview(view)
+        view.frame = self.bounds
+        view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+    }
 }
