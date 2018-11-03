@@ -17,6 +17,7 @@
 		40E7A50B218D34E0007E6300 /* ParkFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E7A50A218D34E0007E6300 /* ParkFinderTests.swift */; };
 		40E7A516218D34E0007E6300 /* ParkFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E7A515218D34E0007E6300 /* ParkFinderUITests.swift */; };
 		ACA1814DCF482B69BC1BA29F /* Pods_ParkFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86284219673577BCFF2921B6 /* Pods_ParkFinderTests.framework */; };
+		C0DEAE3D218DFACD00F2469E /* CheckoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DEAE3C218DFACD00F2469E /* CheckoutController.swift */; };
 		DB8283EB218D890F007C21EC /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8283EA218D890F007C21EC /* user.swift */; };
 		DB8283ED218D89C6007C21EC /* parking_spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8283EC218D89C6007C21EC /* parking_spot.swift */; };
 		DB8283EF218D89F9007C21EC /* reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8283EE218D89F9007C21EC /* reservation.swift */; };
@@ -60,6 +61,7 @@
 		5EF0A4FBB9DE3A41B996B4C3 /* Pods-ParkFinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkFinderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkFinderUITests/Pods-ParkFinderUITests.release.xcconfig"; sourceTree = "<group>"; };
 		81739BFF3983A458F2F5CCDC /* Pods-ParkFinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkFinderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkFinderUITests/Pods-ParkFinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		86284219673577BCFF2921B6 /* Pods_ParkFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0DEAE3C218DFACD00F2469E /* CheckoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutController.swift; sourceTree = "<group>"; };
 		D5743CA557551812E2A7D1BE /* Pods-ParkFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkFinderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkFinderTests/Pods-ParkFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB8283EA218D890F007C21EC /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		DB8283EC218D89C6007C21EC /* parking_spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parking_spot.swift; sourceTree = "<group>"; };
@@ -125,13 +127,14 @@
 			isa = PBXGroup;
 			children = (
 				40E7A4F5218D34DE007E6300 /* AppDelegate.swift */,
-				40E7A4F7218D34DE007E6300 /* ViewController.swift */,
 				DB8283F1218D8FBA007C21EC /* ResultsController.swift */,
 				40E7A4F9218D34DE007E6300 /* Main.storyboard */,
-				DB8283F0218D8E43007C21EC /* Class */,
+				40E7A4F7218D34DE007E6300 /* ViewController.swift */,
 				40E7A4FC218D34E0007E6300 /* Assets.xcassets */,
-				40E7A4FE218D34E0007E6300 /* LaunchScreen.storyboard */,
 				40E7A501218D34E0007E6300 /* Info.plist */,
+				40E7A4FE218D34E0007E6300 /* LaunchScreen.storyboard */,
+				C0DEAE3C218DFACD00F2469E /* CheckoutController.swift */,
+				DB8283F0218D8E43007C21EC /* Class */,
 			);
 			path = ParkFinder;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				DB8283F2218D8FBA007C21EC /* ResultsController.swift in Sources */,
 				DB8283EF218D89F9007C21EC /* reservation.swift in Sources */,
 				DB8283ED218D89C6007C21EC /* parking_spot.swift in Sources */,
+				C0DEAE3D218DFACD00F2469E /* CheckoutController.swift in Sources */,
 				DB8283EB218D890F007C21EC /* user.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
