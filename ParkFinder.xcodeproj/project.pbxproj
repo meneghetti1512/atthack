@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FB061DC2013731D11FE8B4F /* Pods_ParkFinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3907228053D77048910E0587 /* Pods_ParkFinderUITests.framework */; };
+		36B48007456AAD5AC239ECDA /* Pods_ParkFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91B18C5A85F287DCDA5FBFF /* Pods_ParkFinder.framework */; };
 		40E7A4F6218D34DE007E6300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E7A4F5218D34DE007E6300 /* AppDelegate.swift */; };
 		40E7A4F8218D34DE007E6300 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E7A4F7218D34DE007E6300 /* ViewController.swift */; };
 		40E7A4FB218D34DE007E6300 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E7A4F9218D34DE007E6300 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		40E7A500218D34E0007E6300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E7A4FE218D34E0007E6300 /* LaunchScreen.storyboard */; };
 		40E7A50B218D34E0007E6300 /* ParkFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E7A50A218D34E0007E6300 /* ParkFinderTests.swift */; };
 		40E7A516218D34E0007E6300 /* ParkFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E7A515218D34E0007E6300 /* ParkFinderUITests.swift */; };
+		ACA1814DCF482B69BC1BA29F /* Pods_ParkFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86284219673577BCFF2921B6 /* Pods_ParkFinderTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3907228053D77048910E0587 /* Pods_ParkFinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkFinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E7A4F2218D34DE007E6300 /* ParkFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E7A4F5218D34DE007E6300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40E7A4F7218D34DE007E6300 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,15 @@
 		40E7A511218D34E0007E6300 /* ParkFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E7A515218D34E0007E6300 /* ParkFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkFinderUITests.swift; sourceTree = "<group>"; };
 		40E7A517218D34E0007E6300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E7A528218D38FB007E6300 /* ParkFinder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParkFinder-Bridging-Header.h"; sourceTree = "<group>"; };
+		465D97A2355DA96CD66C1855 /* Pods-ParkFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkFinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkFinderTests/Pods-ParkFinderTests.release.xcconfig"; sourceTree = "<group>"; };
+		5EF0A4FBB9DE3A41B996B4C3 /* Pods-ParkFinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkFinderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkFinderUITests/Pods-ParkFinderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		81739BFF3983A458F2F5CCDC /* Pods-ParkFinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkFinderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkFinderUITests/Pods-ParkFinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		86284219673577BCFF2921B6 /* Pods_ParkFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5743CA557551812E2A7D1BE /* Pods-ParkFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkFinderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkFinderTests/Pods-ParkFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E91B18C5A85F287DCDA5FBFF /* Pods_ParkFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB897D370DE5B4745C1A930D /* Pods-ParkFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkFinder/Pods-ParkFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		F77E970FCBBE7A5CDA38A409 /* Pods-ParkFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkFinder/Pods-ParkFinder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36B48007456AAD5AC239ECDA /* Pods_ParkFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA1814DCF482B69BC1BA29F /* Pods_ParkFinderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB061DC2013731D11FE8B4F /* Pods_ParkFinderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +97,9 @@
 				40E7A509218D34E0007E6300 /* ParkFinderTests */,
 				40E7A514218D34E0007E6300 /* ParkFinderUITests */,
 				40E7A4F3218D34DE007E6300 /* Products */,
+				40E7A528218D38FB007E6300 /* ParkFinder-Bridging-Header.h */,
+				6A9F503BE2C71E29F1E1439A /* Pods */,
+				EC3A1788DD51A0F905ED264B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +144,29 @@
 			path = ParkFinderUITests;
 			sourceTree = "<group>";
 		};
+		6A9F503BE2C71E29F1E1439A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB897D370DE5B4745C1A930D /* Pods-ParkFinder.debug.xcconfig */,
+				F77E970FCBBE7A5CDA38A409 /* Pods-ParkFinder.release.xcconfig */,
+				D5743CA557551812E2A7D1BE /* Pods-ParkFinderTests.debug.xcconfig */,
+				465D97A2355DA96CD66C1855 /* Pods-ParkFinderTests.release.xcconfig */,
+				81739BFF3983A458F2F5CCDC /* Pods-ParkFinderUITests.debug.xcconfig */,
+				5EF0A4FBB9DE3A41B996B4C3 /* Pods-ParkFinderUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC3A1788DD51A0F905ED264B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E91B18C5A85F287DCDA5FBFF /* Pods_ParkFinder.framework */,
+				86284219673577BCFF2921B6 /* Pods_ParkFinderTests.framework */,
+				3907228053D77048910E0587 /* Pods_ParkFinderUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40E7A51A218D34E0007E6300 /* Build configuration list for PBXNativeTarget "ParkFinder" */;
 			buildPhases = (
+				DCBE5A550FA581F68AE8A74B /* [CP] Check Pods Manifest.lock */,
 				40E7A4EE218D34DE007E6300 /* Sources */,
 				40E7A4EF218D34DE007E6300 /* Frameworks */,
 				40E7A4F0218D34DE007E6300 /* Resources */,
+				DAE28EB7B87238586AC940F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40E7A51D218D34E0007E6300 /* Build configuration list for PBXNativeTarget "ParkFinderTests" */;
 			buildPhases = (
+				E33D47738D3EC221809D995A /* [CP] Check Pods Manifest.lock */,
 				40E7A502218D34E0007E6300 /* Sources */,
 				40E7A503218D34E0007E6300 /* Frameworks */,
 				40E7A504218D34E0007E6300 /* Resources */,
@@ -167,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40E7A520218D34E0007E6300 /* Build configuration list for PBXNativeTarget "ParkFinderUITests" */;
 			buildPhases = (
+				26E98F9FD99026B6ACA79A64 /* [CP] Check Pods Manifest.lock */,
 				40E7A50D218D34E0007E6300 /* Sources */,
 				40E7A50E218D34E0007E6300 /* Frameworks */,
 				40E7A50F218D34E0007E6300 /* Resources */,
@@ -193,6 +239,7 @@
 				TargetAttributes = {
 					40E7A4F1218D34DE007E6300 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					40E7A505218D34E0007E6300 = {
 						CreatedOnToolsVersion = 10.1;
@@ -250,6 +297,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26E98F9FD99026B6ACA79A64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParkFinderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAE28EB7B87238586AC940F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ParkFinder/Pods-ParkFinder-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkFinder/Pods-ParkFinder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCBE5A550FA581F68AE8A74B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParkFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E33D47738D3EC221809D995A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParkFinderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40E7A4EE218D34DE007E6300 /* Sources */ = {
@@ -430,8 +570,10 @@
 		};
 		40E7A51B218D34E0007E6300 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB897D370DE5B4745C1A930D /* Pods-ParkFinder.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ParkFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,6 +582,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = teste.ParkFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ParkFinder-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,8 +591,10 @@
 		};
 		40E7A51C218D34E0007E6300 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F77E970FCBBE7A5CDA38A409 /* Pods-ParkFinder.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ParkFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -457,6 +603,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = teste.ParkFinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ParkFinder-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,6 +611,7 @@
 		};
 		40E7A51E218D34E0007E6300 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5743CA557551812E2A7D1BE /* Pods-ParkFinderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +632,7 @@
 		};
 		40E7A51F218D34E0007E6300 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465D97A2355DA96CD66C1855 /* Pods-ParkFinderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +653,7 @@
 		};
 		40E7A521218D34E0007E6300 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81739BFF3983A458F2F5CCDC /* Pods-ParkFinderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +673,7 @@
 		};
 		40E7A522218D34E0007E6300 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EF0A4FBB9DE3A41B996B4C3 /* Pods-ParkFinderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

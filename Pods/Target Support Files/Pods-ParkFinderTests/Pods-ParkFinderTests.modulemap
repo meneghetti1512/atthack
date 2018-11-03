@@ -1,0 +1,6 @@
+framework module Pods_ParkFinderTests {
+  umbrella header "Pods-ParkFinderTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
