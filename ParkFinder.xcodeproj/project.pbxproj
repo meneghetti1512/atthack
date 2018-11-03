@@ -21,6 +21,7 @@
 		DB8283ED218D89C6007C21EC /* parking_spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8283EC218D89C6007C21EC /* parking_spot.swift */; };
 		DB8283EF218D89F9007C21EC /* reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8283EE218D89F9007C21EC /* reservation.swift */; };
 		DB8283F2218D8FBA007C21EC /* ResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8283F1218D8FBA007C21EC /* ResultsController.swift */; };
+		DB8283F4218DF75B007C21EC /* result_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8283F3218DF75B007C21EC /* result_view.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		DB8283EC218D89C6007C21EC /* parking_spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parking_spot.swift; sourceTree = "<group>"; };
 		DB8283EE218D89F9007C21EC /* reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reservation.swift; sourceTree = "<group>"; };
 		DB8283F1218D8FBA007C21EC /* ResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsController.swift; sourceTree = "<group>"; };
+		DB8283F3218DF75B007C21EC /* result_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = result_view.swift; sourceTree = "<group>"; };
 		E91B18C5A85F287DCDA5FBFF /* Pods_ParkFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB897D370DE5B4745C1A930D /* Pods-ParkFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkFinder/Pods-ParkFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		F77E970FCBBE7A5CDA38A409 /* Pods-ParkFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkFinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkFinder/Pods-ParkFinder.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				DB8283EA218D890F007C21EC /* user.swift */,
 				DB8283EE218D89F9007C21EC /* reservation.swift */,
 				DB8283EC218D89C6007C21EC /* parking_spot.swift */,
+				DB8283F3218DF75B007C21EC /* result_view.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				DB8283F2218D8FBA007C21EC /* ResultsController.swift in Sources */,
 				DB8283EF218D89F9007C21EC /* reservation.swift in Sources */,
 				DB8283ED218D89C6007C21EC /* parking_spot.swift in Sources */,
+				DB8283F4218DF75B007C21EC /* result_view.swift in Sources */,
 				DB8283EB218D890F007C21EC /* user.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
