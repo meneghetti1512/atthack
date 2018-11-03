@@ -8,6 +8,7 @@ target 'ParkFinder' do
   # Pods for ParkFinder
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'WARangeSlider'
   target 'ParkFinderTests' do
     inherit! :search_paths
     # Pods for testing
@@ -17,5 +18,4 @@ target 'ParkFinder' do
     inherit! :search_paths
     # Pods for testing
   end
-
 end

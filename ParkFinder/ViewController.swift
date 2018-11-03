@@ -14,9 +14,6 @@ import GooglePlaces
 
 
 class ViewController: UIViewController{
-    
-    
-    
     var latitude: Double!
     var longitude: Double!
     var address = "Notre Dame"
