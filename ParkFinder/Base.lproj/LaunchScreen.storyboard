@@ -1,110 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qwb-MR-DQT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes>
-        <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
-            <objects>
-                <viewController id="01J-lp-oVM" customClass="ViewController" customModule="ParkFinder" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="53" y="375"/>
-        </scene>
-        <!--Results Controller-->
-        <scene sceneID="9ZY-vA-QI1">
-            <objects>
-                <viewController id="qwb-MR-DQT" customClass="ResultsController" customModule="ParkFinder" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4he-XW-Id6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLI-f6-YPH">
-                                <rect key="frame" x="225" y="73" width="103" height="30"/>
-                                <state key="normal" title="Private Parking"/>
-                            </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10t-Im-Lr8">
-                                <rect key="frame" x="16" y="121" width="343" height="526"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2J-rM-reJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="800"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFd-0t-JMX" customClass="result_view" customModule="ParkFinder" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="128"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="LWP-oO-NJS">
-                                                        <rect key="frame" x="22" y="39.5" width="55" height="49"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="49" id="Hnw-Cs-pf1"/>
-                                                            <constraint firstAttribute="width" secondItem="LWP-oO-NJS" secondAttribute="height" multiplier="55:49" id="yNK-gt-xSl"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                </subviews>
-                                                <color key="backgroundColor" red="0.97680455450000003" green="0.0" blue="0.045687920719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="128" id="Ow8-n2-E48"/>
-                                                    <constraint firstItem="LWP-oO-NJS" firstAttribute="centerY" secondItem="PFd-0t-JMX" secondAttribute="centerY" id="S3J-Hz-MMw"/>
-                                                    <constraint firstItem="LWP-oO-NJS" firstAttribute="leading" secondItem="PFd-0t-JMX" secondAttribute="leading" constant="22" id="sdx-Vp-fcl"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="PFd-0t-JMX" secondAttribute="trailing" id="5Yv-U8-bqv"/>
-                                            <constraint firstItem="PFd-0t-JMX" firstAttribute="leading" secondItem="W2J-rM-reJ" secondAttribute="leading" id="9cY-IS-Kv0"/>
-                                            <constraint firstItem="PFd-0t-JMX" firstAttribute="top" secondItem="W2J-rM-reJ" secondAttribute="top" id="bIm-Jx-a2Z"/>
-                                            <constraint firstAttribute="height" constant="800" id="mRN-LM-zND"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="W2J-rM-reJ" secondAttribute="bottom" constant="-274" id="6KE-Lw-f73"/>
-                                    <constraint firstItem="W2J-rM-reJ" firstAttribute="leading" secondItem="10t-Im-Lr8" secondAttribute="leading" id="KXH-nL-aCY"/>
-                                    <constraint firstAttribute="trailing" secondItem="W2J-rM-reJ" secondAttribute="trailing" id="S46-5c-Ld0"/>
-                                    <constraint firstItem="W2J-rM-reJ" firstAttribute="centerX" secondItem="10t-Im-Lr8" secondAttribute="centerX" id="eqU-vP-TLC"/>
-                                    <constraint firstItem="W2J-rM-reJ" firstAttribute="top" secondItem="10t-Im-Lr8" secondAttribute="top" id="vqX-h8-aR8"/>
-                                </constraints>
-                            </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXd-aq-vOC">
-                                <rect key="frame" x="59" y="73" width="78" height="30"/>
-                                <state key="normal" title="Parking Lot"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="PLI-f6-YPH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zXd-aq-vOC" secondAttribute="trailing" constant="8" symbolic="YES" id="10w-b6-XCB"/>
-                            <constraint firstItem="PLI-f6-YPH" firstAttribute="top" secondItem="ze2-0d-Rgj" secondAttribute="top" constant="53" id="8tc-HS-S17"/>
-                            <constraint firstItem="ze2-0d-Rgj" firstAttribute="bottom" secondItem="10t-Im-Lr8" secondAttribute="bottom" constant="20" id="Gg8-cr-eit"/>
-                            <constraint firstItem="ze2-0d-Rgj" firstAttribute="trailing" secondItem="10t-Im-Lr8" secondAttribute="trailing" constant="16" id="ZTi-sG-mQt"/>
-                            <constraint firstItem="10t-Im-Lr8" firstAttribute="top" secondItem="zXd-aq-vOC" secondAttribute="bottom" constant="18" id="aj3-bE-ETm"/>
-                            <constraint firstItem="zXd-aq-vOC" firstAttribute="leading" secondItem="ze2-0d-Rgj" secondAttribute="leading" constant="59" id="cFa-Uy-oVt"/>
-                            <constraint firstItem="ze2-0d-Rgj" firstAttribute="trailing" secondItem="PLI-f6-YPH" secondAttribute="trailing" constant="47" id="fFe-ys-WDA"/>
-                            <constraint firstItem="10t-Im-Lr8" firstAttribute="leading" secondItem="ze2-0d-Rgj" secondAttribute="leading" constant="16" id="lde-ND-6ZN"/>
-                            <constraint firstItem="zXd-aq-vOC" firstAttribute="top" secondItem="ze2-0d-Rgj" secondAttribute="top" constant="53" id="xC9-NL-Hge"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="ze2-0d-Rgj"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="37U-y4-IxM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="860" y="374.66266866566718"/>
-        </scene>
-    </scenes>
-    <resources>
-        <image name="house" width="170" height="170"/>
-    </resources>
+    <scenes/>
 </document>
