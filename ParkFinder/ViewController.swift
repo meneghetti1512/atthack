@@ -16,14 +16,15 @@ import GooglePlaces
 class ViewController: UIViewController{
     
     
-    
+    @IBOutlet weak var table: UIView!
+    @IBOutlet weak var destination: UITextField!
+    @IBOutlet weak var map: MKMapView!
     var latitude: Double!
     var longitude: Double!
-    var address = "Notre Dame"
+    @IBOutlet weak var roundedbutton: UIButton!
     
-
     //this is working
-    @IBOutlet weak var map: MKMapView!
+    
     func coordinates(forAddress address: String, completion: @escaping (CLLocationCoordinate2D?) -> Void) {
         let geocoder = CLGeocoder()
         geocoder.geocodeAddressString(address) {
@@ -37,44 +38,34 @@ class ViewController: UIViewController{
         }
     }
     
-    // working but not in use
-    func display(address: String){
-        let camera = GMSCameraPosition.camera(withLatitude: 0.0, longitude: 0.0, zoom: 1.0)
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        view = mapView
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
-        marker.title = "Fitzpatrick Hall of Carteation"
-        marker.snippet = "Indiana"
-        marker.map = mapView}
     
-    //this is working
-    public func openMapForPlace(lat:Double = 0, long:Double = 0, placeName:String = "") {
-        let latitude: CLLocationDegrees = lat
-        let longitude: CLLocationDegrees = long
+    func display(lat: Double, long: Double){
+
+        let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
+        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        map.setRegion(MKCoordinateRegion(center: coordinate, span: span), animated: false)
         
-        let regionDistance:CLLocationDistance = 100
-        let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
-        let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
-        let options = [
-            MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
-            MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)
-        ]
-        let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
-        let mapItem = MKMapItem(placemark: placemark)
-        mapItem.name = placeName
-        mapItem.openInMaps(launchOptions: options)
     }
-    //this is working
-    override func viewDidLoad() {
-        coordinates(forAddress: address) {
+
+    @IBAction func search(_ sender: UIButton) {
+        let address = destination.text
+        coordinates(forAddress: address ?? "") {
             (location) in
             guard let location = location else {
                 // Handle error here.
                 return
             }
-            self.openMapForPlace(lat: location.latitude, long: location.longitude)
+            self.display(lat: location.latitude, long: location.longitude)
         }
+    }
+    
+    //this is working
+    override func viewDidLoad() {
+        destination.layer.borderColor = UIColor.black.cgColor
+        destination.layer.borderWidth = 1
+        destination.layer.cornerRadius = 5
+        
+        self.destination.text = "Destination"
     }
 }
 
