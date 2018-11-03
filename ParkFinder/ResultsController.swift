@@ -12,16 +12,21 @@ class ResultsController: UIViewController {
 
     @IBOutlet weak var parking_lot: UIButton!
     @IBOutlet weak var list_view: UIView!
+    @IBOutlet weak var scroll_view: UIScrollView!
     
-    var array = [1, 2, 3, 4, 5, 6]
+    
+    var array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let w = self.list_view.frame.width
+        self.scroll_view.contentSize.height = CGFloat(110*array.count)
+        self.scroll_view.updateConstraints()
+        self.list_view.updateConstraints()
         
         for i in array {
-            let newview = result_view(frame: CGRect(x: 0, y: 110*i, width: Int(w), height: 100))
+            let newview = result_view(frame: CGRect(x: 0, y: 110*(i-1), width: Int(w), height: 100))
             newview.backgroundColor = .red
             //let a = newview.time_distance
             newview.type_icon.image = UIImage(named: "house")
