@@ -51,7 +51,7 @@
                                 <rect key="frame" x="20" y="147" width="374" height="715"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yyF-Zr-u8D">
-                                        <rect key="frame" x="47" y="171" width="285" height="128"/>
+                                        <rect key="frame" x="8" y="171" width="358" height="128"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>

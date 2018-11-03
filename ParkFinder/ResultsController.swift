@@ -20,13 +20,14 @@ class ResultsController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let h = 140
         let w = self.list_view.frame.width
-        self.scroll_view.contentSize.height = CGFloat(110*array.count)
+        self.scroll_view.contentSize.height = CGFloat((h + 10)*array.count)
         self.scroll_view.updateConstraints()
         self.list_view.updateConstraints()
         
         for i in array {
-            let newview = result_view(frame: CGRect(x: 0, y: 110*(i-1), width: Int(w), height: 100))
+            let newview = result_view(frame: CGRect(x: 0, y: (h+10)*(i-1), width: Int(w), height: h))
             newview.backgroundColor = .red
             //let a = newview.time_distance
             newview.type_icon.image = UIImage(named: "house")
