@@ -18,25 +18,23 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    private let locationManager = CLLocationManager()
     
     
     @IBOutlet weak var mainMap: MKMapView!
     override func loadView() {
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 6.
-        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
+        let camera = GMSCameraPosition.camera(withLatitude: 41.7002, longitude: -86.2379, zoom: 16.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
         let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
+        marker.position = CLLocationCoordinate2D(latitude: 41.7002, longitude: -86.2379)
+        marker.title = "Fitzpatrick Hall of Carteation"
+        marker.snippet = "Indiana"
         marker.map = mapView
         
 
     }
     
 }
-
 
