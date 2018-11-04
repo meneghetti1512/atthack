@@ -95,8 +95,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mB1-xp-xpx"/>
-                                    <segue destination="hAG-3a-tTi" kind="show" id="ja7-Ef-K4n"/>
+                                    <segue destination="hAG-3a-tTi" kind="show" id="Rwq-Vd-4KP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -337,9 +336,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="58" height="58"/>
-        <image name="back" width="1200" height="1200"/>
-        <image name="newSpot" width="58" height="58"/>
+        <image name="Image" width="113" height="113"/>
+        <image name="back" width="533" height="533"/>
+        <image name="newSpot" width="113" height="113"/>
         <image name="settings" width="16" height="16"/>
     </resources>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
