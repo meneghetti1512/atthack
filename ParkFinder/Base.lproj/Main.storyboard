@@ -95,7 +95,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="hAG-3a-tTi" kind="show" id="tcn-E0-g2Y"/>
+                                    <segue destination="hAG-3a-tTi" kind="show" id="za9-KQ-6QY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -375,8 +375,7 @@
         <image name="settings" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aQb-79-WVQ"/>
-        <segue reference="Rq8-OG-1Lr"/>
+        <segue reference="za9-KQ-6QY"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>

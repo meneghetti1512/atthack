@@ -64,9 +64,9 @@ class ResultsController: UIViewController, UIScrollViewDelegate, UIGestureRecogn
                 newview.name.text = spot.name ?? "-"
                 newview.picture.image = UIImage(named: spot.picture)
                 newview.type_icon.image = UIImage(named: (spot.type == 1) ? "parking_lot" : "house")
-                
+                newview.address.text = spot.address
                 newview.hour_price.text = "U$ " + String(format: "%.2f", spot.min_price_hour)
-                newview.time_distance.text = "5 min"
+                newview.time_distance.text = String(Int.random(in: 31 ... 38))+" min"
                 newview.rating.text = String(format: "%.1f", spot.rating)
                 
                 // Add Gesture Recognizer

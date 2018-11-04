@@ -60,7 +60,6 @@ class ViewController: UIViewController{
     }
     
     func display(lat: Double, long: Double){
-
         let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
         let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
         let annotation = MKPointAnnotation()
