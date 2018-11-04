@@ -11,39 +11,72 @@ import UIKit
 class ResultsController: UIViewController {
 
     @IBOutlet weak var parking_lot: UIButton!
+    @IBOutlet weak var private_parking: UIButton!
     @IBOutlet weak var list_view: UIView!
     @IBOutlet weak var scroll_view: UIScrollView!
     
     
-    var array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    
+    var array  = [parking_spot]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let a = parking_spot(type: 1, availability: [[1]], min_price_hour: 10, address: "Rua Na Cabeça Shampoo")
+        let b = parking_spot(type: 2, availability: [[1]], min_price_hour: 12, address: "Lave bem o seu...")
+        array.append(a)
+        array.append(b)
+        
+        display_spots()
+        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func parking_lot_button(_ sender: UIButton) {
+        for v in self.list_view.subviews {
+            v.removeFromSuperview()
+        }
+        self.array.removeAll()
+        
+        if sender.isSelected {
+            sender.isSelected = false
+        }
+        else {
+            sender.isSelected = true
+        }
+        display_spots()
+        self.viewDidLoad()
+    }
+    
+    func display_spots() {
         let h = 140
         let w = self.list_view.frame.width
         self.scroll_view.contentSize.height = CGFloat((h + 10)*array.count)
         self.scroll_view.updateConstraints()
         self.list_view.updateConstraints()
         
-        for i in array {
-            let newview = result_view(frame: CGRect(x: 0, y: (h+10)*(i-1), width: Int(w), height: h))
-            newview.backgroundColor = .red
-            //let a = newview.time_distance
-            newview.type_icon.image = UIImage(named: "house")
-            self.list_view.addSubview(newview)
-
-            
-        }
-        // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func parking_lot_button(_ sender: UIButton) {
-        if sender.isSelected {
-            sender.isSelected = false
-        }
-        else {
-            sender.isSelected = true
+        var i = 0
+        
+        for spot in array {
+            if private_parking.isSelected && spot.type == 1 {
+                let newview = result_view(frame: CGRect(x: 0, y: (h+10)*(i), width: Int(w), height: h))
+                //let a = newview.time_distance
+                
+                newview.type_icon.image = UIImage(named: "house")
+                newview.time_distance.text = "5 min"
+                newview.total_price.text = "U$" + String(format: "%.2f", spot.min_price_hour)
+                
+                self.list_view.addSubview(newview)
+            }
+                
+            else if parking_lot.isSelected && spot.type == 2 {
+                let newview = result_view(frame: CGRect(x: 0, y: (h+10)*(i), width: Int(w), height: h))
+                //let a = newview.time_distance
+                
+                newview.type_icon.image = UIImage(named: "parking_lot")
+                newview.time_distance.text = "5 min"
+                newview.total_price.text = "U$" + String(format: "%.2f", spot.min_price_hour)
+                
+                self.list_view.addSubview(newview)
+            }
+            i = i+1
         }
     }
     
