@@ -42,8 +42,10 @@ class ViewController: UIViewController{
     func display(lat: Double, long: Double){
 
         let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
-        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-        map.setRegion(MKCoordinateRegion(center: coordinate, span: span), animated: false)
+        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+        
+        map.setRegion(MKCoordinateRegion(center: coordinate, span: span), animated: true)
+        
         
     }
 
