@@ -54,7 +54,7 @@ class ResultsController: UIViewController {
         var i = 0
         
         for spot in array {
-            if private_parking.isSelected && spot.type == 1 {
+            if private_parking.isSelected && spot.type == 2 {
                 let newview = result_view(frame: CGRect(x: 0, y: (h+10)*(i), width: Int(w), height: h))
                 //let a = newview.time_distance
                 
@@ -66,7 +66,7 @@ class ResultsController: UIViewController {
                 i = i+1
             }
                 
-            else if parking_lot.isSelected && spot.type == 2 {
+            else if parking_lot.isSelected && spot.type == 1 {
                 let newview = result_view(frame: CGRect(x: 0, y: (h+10)*(i), width: Int(w), height: h))
                 //let a = newview.time_distance
                 
