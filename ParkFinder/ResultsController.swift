@@ -64,6 +64,7 @@ class ResultsController: UIViewController {
                 newview.total_price.text = "U$" + String(format: "%.2f", spot.min_price_hour)
                 
                 self.list_view.addSubview(newview)
+                i = i+1
             }
                 
             else if parking_lot.isSelected && spot.type == 2 {
@@ -75,8 +76,8 @@ class ResultsController: UIViewController {
                 newview.total_price.text = "U$" + String(format: "%.2f", spot.min_price_hour)
                 
                 self.list_view.addSubview(newview)
+                i = i+1
             }
-            i = i+1
         }
     }
     
