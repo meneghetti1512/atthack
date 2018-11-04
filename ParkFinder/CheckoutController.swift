@@ -13,11 +13,12 @@ import CoreLocation
 
 class CheckoutController: UIViewController {
     var parkingSpot: parking_spot?
-    var reservation: reservation?
+    var reservation: String?
     @IBOutlet weak var address: UILabel!
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var distance: UILabel!
     @IBOutlet weak var map: MKMapView!
+    @IBOutlet weak var reservation_time: UILabel!
     
     
     func coordinates(forAddress address: String, completion: @escaping (CLLocationCoordinate2D?) -> Void) {
@@ -64,6 +65,7 @@ class CheckoutController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         address.text = parkingSpot?.address
+        self.reservation_time.text = self.reservation
         price.text = String(format: "U$ %.2f", parkingSpot?.min_price_hour ?? 0.0)
         distance.text = "5 miles"
         openMapForPlace()

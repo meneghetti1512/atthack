@@ -13,7 +13,7 @@ class ResultsController: UIViewController, UIScrollViewDelegate, UIGestureRecogn
 
     @IBOutlet weak var parking_lot: UIButton!
     @IBOutlet weak var private_parking: UIButton!
-    @IBOutlet weak var list_view: UIView!
+//    @IBOutlet weak var list_view: UIView!
     @IBOutlet weak var scroll_view: UIScrollView!
     @IBOutlet weak var slider: RangeSlider!
     @IBOutlet weak var time_range_text: UILabel!
@@ -37,7 +37,7 @@ class ResultsController: UIViewController, UIScrollViewDelegate, UIGestureRecogn
     }
     
     @IBAction func parking_lot_button(_ sender: UIButton) {
-        for v in self.list_view.subviews {
+        for v in self.scroll_view.subviews {
             v.removeFromSuperview()
         }
         self.array.removeAll()
@@ -48,16 +48,13 @@ class ResultsController: UIViewController, UIScrollViewDelegate, UIGestureRecogn
         else {
             sender.isSelected = true
         }
-        display_spots()
         self.viewDidLoad()
     }
     
     func display_spots() {
         let h = 140
-        let w = self.list_view.frame.width
-        self.scroll_view.contentSize.height = CGFloat((h + 10) * array.count)
-        self.scroll_view.updateConstraints()
-        self.list_view.updateConstraints()
+        let w = self.scroll_view.frame.width
+//        self.list_view.updateConstraints()
         
         var i = 0, k = 0
         for spot in array {
@@ -77,12 +74,14 @@ class ResultsController: UIViewController, UIScrollViewDelegate, UIGestureRecogn
                 newview.addGestureRecognizer(tap)
                 newview.isUserInteractionEnabled = true
                 
-                    newview.spot = spot
+                newview.spot = spot
                 self.scroll_view.addSubview(newview)
                 i = i + 1
             }
             k = k + 1
         }
+        self.scroll_view.contentSize.height = CGFloat((h + 10) * i)
+        self.scroll_view.updateConstraints()
     }
     
     @objc func result_selected(sender: UITapGestureRecognizer) {
@@ -98,6 +97,7 @@ class ResultsController: UIViewController, UIScrollViewDelegate, UIGestureRecogn
         {
             let vc = segue.destination as! CheckoutController
             vc.parkingSpot = selected_spot
+            vc.reservation = self.time_range_text.text
         }
     }
 
