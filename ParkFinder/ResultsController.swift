@@ -15,15 +15,14 @@ class ResultsController: UIViewController {
     @IBOutlet weak var list_view: UIView!
     @IBOutlet weak var scroll_view: UIScrollView!
     
-    
     var array  = [parking_spot]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let a = parking_spot(type: 1, availability: [[1]], min_price_hour: 10, address: "Rua Na Cabeça Shampoo")
-        let b = parking_spot(type: 2, availability: [[1]], min_price_hour: 12, address: "Lave bem o seu...")
-        array.append(a)
-        array.append(b)
+        
+        for park in parking_spot.MOCK_DATA {
+            array.append(park)
+        }
         
         display_spots()
         // Do any additional setup after loading the view.
