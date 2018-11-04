@@ -42,6 +42,29 @@
                                     <segue destination="hAG-3a-tTi" kind="show" id="ja7-Ef-K4n"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qiy-ma-wER">
+                                <rect key="frame" x="20" y="651" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" image="Image" backgroundImage="settings">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEk-Gf-TEs">
+                                <rect key="frame" x="20" y="742" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="newSpot" backgroundImage="settings">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -49,6 +72,8 @@
                     <connections>
                         <outlet property="destination" destination="UMR-o8-jPe" id="aQp-C1-S5m"/>
                         <outlet property="map" destination="PG6-rp-QSD" id="eJd-mP-xKd"/>
+                        <outlet property="newspot" destination="uEk-Gf-TEs" id="avt-8N-fZ9"/>
+                        <outlet property="settings" destination="Qiy-ma-wER" id="GEs-mt-Yn4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -165,10 +190,10 @@
                                 <state key="normal" title="Checkout"/>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dvP-mW-gos">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="506.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="505.5"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reservation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6R-jM-brI">
-                                <rect key="frame" x="25" y="546.5" width="120" height="21.5"/>
+                                <rect key="frame" x="25" y="545.5" width="120" height="22.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="kZ4-fy-kbF"/>
                                 </constraints>
@@ -226,7 +251,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BP7-7Y-RXY" customClass="RangeSlider" customModule="WARangeSlider">
-                                <rect key="frame" x="145" y="547.5" width="244" height="20"/>
+                                <rect key="frame" x="145" y="547" width="244" height="20"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="3gp-kT-35B"/>
@@ -272,6 +297,9 @@
     </scenes>
     <resources>
         <image name="back" width="533" height="533"/>
+        <image name="Image" width="225" height="225"/>
+        <image name="newSpot" width="56.666667938232422" height="56.666667938232422"/>
+        <image name="settings" width="16" height="16"/>
     </resources>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>
