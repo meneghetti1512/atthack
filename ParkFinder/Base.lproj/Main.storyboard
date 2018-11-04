@@ -89,7 +89,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHf-6U-UFX">
-                                <rect key="frame" x="221" y="104" width="103" height="30"/>
+                                <rect key="frame" x="286" y="104" width="103" height="30"/>
                                 <color key="tintColor" red="0.001036897302" green="0.35821413990000001" blue="0.75384753940000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Private Parking"/>
                                 <connections>
@@ -97,7 +97,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGb-gq-YvQ">
-                                <rect key="frame" x="90" y="104" width="78" height="30"/>
+                                <rect key="frame" x="193" y="104" width="78" height="30"/>
                                 <color key="tintColor" red="0.001036897302" green="0.35821413990000001" blue="0.75384753940000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Parking Lot">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -133,29 +133,53 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qiw-dw-DjM" customClass="RangeSlider" customModule="WARangeSlider">
-                                <rect key="frame" x="20" y="149" width="374" height="20"/>
+                                <rect key="frame" x="20" y="147" width="374" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="MiJ-yr-pSf"/>
+                                    <constraint firstAttribute="height" constant="30" id="MiJ-yr-pSf"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                        <real key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lowerValue">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="upperValue">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="range_slider_changed:" destination="hAG-3a-tTi" eventType="valueChanged" id="4Wu-uG-xjt"/>
+                                </connections>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2:30 - 4:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIE-6s-sJu">
+                                <rect key="frame" x="72" y="109" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cgA-rh-mm2" firstAttribute="trailing" secondItem="qiw-dw-DjM" secondAttribute="trailing" constant="20" id="4w4-zv-mj0"/>
                             <constraint firstItem="qiw-dw-DjM" firstAttribute="leading" secondItem="cgA-rh-mm2" secondAttribute="leading" constant="20" id="7mf-aJ-9de"/>
                             <constraint firstItem="vGb-gq-YvQ" firstAttribute="top" secondItem="cgA-rh-mm2" secondAttribute="top" constant="60" id="D4J-Wp-6xZ"/>
-                            <constraint firstItem="cgA-rh-mm2" firstAttribute="trailing" secondItem="aHf-6U-UFX" secondAttribute="trailing" constant="90" id="F68-oN-W9p"/>
+                            <constraint firstItem="cgA-rh-mm2" firstAttribute="trailing" secondItem="aHf-6U-UFX" secondAttribute="trailing" constant="25" id="F68-oN-W9p"/>
                             <constraint firstItem="JXh-gE-8Fc" firstAttribute="top" secondItem="aHf-6U-UFX" secondAttribute="bottom" constant="50" id="IiF-oU-5D8"/>
                             <constraint firstItem="cgA-rh-mm2" firstAttribute="bottom" secondItem="JXh-gE-8Fc" secondAttribute="bottom" id="Oqw-ZC-R8g"/>
                             <constraint firstItem="aHf-6U-UFX" firstAttribute="top" secondItem="cgA-rh-mm2" secondAttribute="top" constant="60" id="Psr-ZR-yHk"/>
-                            <constraint firstItem="JXh-gE-8Fc" firstAttribute="top" secondItem="qiw-dw-DjM" secondAttribute="bottom" constant="15" id="RSe-dA-7gY"/>
-                            <constraint firstItem="aHf-6U-UFX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vGb-gq-YvQ" secondAttribute="trailing" constant="8" symbolic="YES" id="TS3-et-cvg"/>
+                            <constraint firstItem="JXh-gE-8Fc" firstAttribute="top" secondItem="qiw-dw-DjM" secondAttribute="bottom" constant="7" id="RSe-dA-7gY"/>
+                            <constraint firstItem="aHf-6U-UFX" firstAttribute="leading" secondItem="vGb-gq-YvQ" secondAttribute="trailing" constant="15" id="TS3-et-cvg"/>
                             <constraint firstItem="UHY-l2-XRJ" firstAttribute="top" secondItem="cgA-rh-mm2" secondAttribute="top" constant="13" id="ZOn-Yv-jyc"/>
+                            <constraint firstItem="vGb-gq-YvQ" firstAttribute="leading" secondItem="EIE-6s-sJu" secondAttribute="trailing" constant="33" id="cgJ-QJ-enR"/>
+                            <constraint firstItem="EIE-6s-sJu" firstAttribute="top" secondItem="cgA-rh-mm2" secondAttribute="top" constant="65" id="dwv-up-Mhd"/>
                             <constraint firstItem="UHY-l2-XRJ" firstAttribute="leading" secondItem="cgA-rh-mm2" secondAttribute="leading" constant="20" id="lxo-iM-EmM"/>
                             <constraint firstItem="JXh-gE-8Fc" firstAttribute="leading" secondItem="cgA-rh-mm2" secondAttribute="leading" constant="20" id="q8N-2P-gWo"/>
                             <constraint firstItem="cgA-rh-mm2" firstAttribute="trailing" secondItem="JXh-gE-8Fc" secondAttribute="trailing" constant="20" id="s7T-V6-PQg"/>
-                            <constraint firstItem="vGb-gq-YvQ" firstAttribute="leading" secondItem="cgA-rh-mm2" secondAttribute="leading" constant="90" id="uxa-cv-sv7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cgA-rh-mm2"/>
                     </view>
@@ -164,6 +188,8 @@
                         <outlet property="parking_lot" destination="vGb-gq-YvQ" id="KaB-71-8Wm"/>
                         <outlet property="private_parking" destination="aHf-6U-UFX" id="ZTG-h6-1Yl"/>
                         <outlet property="scroll_view" destination="JXh-gE-8Fc" id="Hnj-R1-vzX"/>
+                        <outlet property="slider" destination="qiw-dw-DjM" id="cDa-cf-XQe"/>
+                        <outlet property="time_range_text" destination="EIE-6s-sJu" id="hMT-LF-lcS"/>
                         <segue destination="gWI-H7-t9a" kind="show" identifier="result_segue" id="aQb-79-WVQ"/>
                     </connections>
                 </viewController>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WARangeSlider
 
 class ResultsController: UIViewController {
 
@@ -14,8 +15,12 @@ class ResultsController: UIViewController {
     @IBOutlet weak var private_parking: UIButton!
     @IBOutlet weak var list_view: UIView!
     @IBOutlet weak var scroll_view: UIScrollView!
+    @IBOutlet weak var slider: RangeSlider!
+    @IBOutlet weak var time_range_text: UILabel!
     
     var array  = [parking_spot]()
+    var min_time = Int()
+    var max_time = Int()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +28,7 @@ class ResultsController: UIViewController {
         for park in parking_spot.MOCK_DATA {
             array.append(park)
         }
+        
         
         display_spots()
         
@@ -99,4 +105,20 @@ class ResultsController: UIViewController {
         self.performSegue(withIdentifier: "result_segue", sender: nil)
     }
 
+    @IBAction func range_slider_changed(_ sender: Any) {
+//        self.slider.lowerValue = Double(Int(self.slider.lowerValue))
+//        self.slider.upperValue = Double(Int(self.slider.upperValue))
+        self.min_time = 100*Int(floor(self.slider.lowerValue/2)) + 30*(Int(self.slider.lowerValue) % 2)
+        self.max_time = 100*Int(floor(self.slider.upperValue/2)) + 30*(Int(self.slider.upperValue) % 2)
+        self.time_range_text.text = format_time(num: self.min_time) + " - " + format_time(num: self.max_time)
+    }
+    
+    func format_time (num: Int) -> String {
+        let str1 = String(Int(floor(Double(num)/100)))
+        var str2 = String(num % 100)
+        if str2 == "0" {
+            str2 = "00"
+        }
+        return str1 + ":" + str2
+    }
 }
