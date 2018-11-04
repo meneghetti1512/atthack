@@ -295,6 +295,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="3gp-kT-35B"/>
+                                    <constraint firstAttribute="width" constant="244" id="qkZ-md-0uW"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -329,6 +330,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jeo-uS-dGk"/>
                     </view>
+                    <connections>
+                        <outlet property="address" destination="9Ry-nr-UzS" id="lQk-JS-3qW"/>
+                        <outlet property="distance" destination="XvP-1d-ocn" id="Ivw-SW-ayG"/>
+                        <outlet property="price" destination="RET-iR-ZUh" id="oqI-A8-oEC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IpY-bF-bQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -336,9 +342,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="113" height="113"/>
-        <image name="back" width="533" height="533"/>
-        <image name="newSpot" width="113" height="113"/>
+        <image name="Image" width="58" height="58"/>
+        <image name="back" width="1200" height="1200"/>
+        <image name="newSpot" width="58" height="58"/>
         <image name="settings" width="16" height="16"/>
     </resources>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>

@@ -9,12 +9,11 @@
 import UIKit
 
 class result_view: UIView {
-    
     @IBOutlet var view: UIView!
     @IBOutlet weak var type_icon: UIImageView!
     @IBOutlet weak var time_distance: UILabel!
     @IBOutlet var total_price: UILabel!
-    
+    var spot:parking_spot?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -25,13 +24,6 @@ class result_view: UIView {
         super.init(frame: frame)
         commonInit()
     }
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
 
     func commonInit() {
         Bundle.main.loadNibNamed("result_view", owner: self, options: nil)

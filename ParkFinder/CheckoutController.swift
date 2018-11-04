@@ -11,10 +11,12 @@ import GoogleMaps
 import MapKit
 
 class CheckoutController: UIViewController {
-    var latitude: Double!
-    var longitude: Double!
-    var address = "Notre Dame"
+    var parkingSpot: parking_spot?
+    var reservation: reservation?
     
+    @IBOutlet weak var address: UILabel!
+    @IBOutlet weak var price: UILabel!
+    @IBOutlet weak var distance: UILabel!
     @IBOutlet weak var map: MKMapView!
     func coordinates(forAddress address: String, completion: @escaping (CLLocationCoordinate2D?) -> Void) {
         let geocoder = CLGeocoder()
@@ -50,5 +52,9 @@ class CheckoutController: UIViewController {
     //this is working
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        address.text = parkingSpot?.address
+        price.text = String(format: "U$ %.2f", parkingSpot?.min_price_hour ?? 0.0)
+        distance.text = "5 miles"
     }
 }
