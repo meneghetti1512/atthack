@@ -31,4 +31,5 @@ class result_view: UIView {
         view.frame = self.bounds
         view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
     }
+    
 }
