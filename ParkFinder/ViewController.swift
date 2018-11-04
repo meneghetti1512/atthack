@@ -16,10 +16,12 @@ import GooglePlaces
 class ViewController: UIViewController{
     @IBOutlet weak var table: UIView!
     @IBOutlet weak var destination: UITextField!
+    @IBOutlet weak var newspot: UIButton!
     @IBOutlet weak var map: MKMapView!
     var latitude: Double!
     var longitude: Double!
     @IBOutlet weak var roundedbutton: UIButton!
+    @IBOutlet weak var settings: UIButton!
     
     //this is working
     
@@ -62,8 +64,12 @@ class ViewController: UIViewController{
         destination.layer.borderColor = UIColor.black.cgColor
         destination.layer.borderWidth = 1
         destination.layer.cornerRadius = 5
-        
-        self.destination.text = "Destination"
+        settings.layer.cornerRadius = 0.5 * settings.bounds.size.width
+        settings.layer.borderColor = UIColor.black.cgColor
+        settings.clipsToBounds = true
+        newspot.layer.cornerRadius = 0.5 * newspot.bounds.size.width
+        newspot.layer.borderColor = UIColor.black.cgColor
+        newspot.clipsToBounds = true
     }
 }
 
