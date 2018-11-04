@@ -25,6 +25,10 @@ class ResultsController: UIViewController {
         }
         
         display_spots()
+        
+        let tap_cancel = UITapGestureRecognizer(target: self, action: #selector(result_selected(sender:)))
+        tap_cancel.cancelsTouchesInView = false
+        self.scroll_view.addGestureRecognizer(tap_cancel)
         // Do any additional setup after loading the view.
     }
     
@@ -62,33 +66,37 @@ class ResultsController: UIViewController {
                 newview.time_distance.text = "5 min"
                 newview.total_price.text = "U$" + String(format: "%.2f", spot.min_price_hour)
                 
+                // Add Gesture Recognizer
+                let tap = UITapGestureRecognizer(target: self, action: #selector(result_selected(sender:)))
+                newview.addGestureRecognizer(tap)
+                newview.isUserInteractionEnabled = true
+                
                 self.list_view.addSubview(newview)
                 i = i+1
             }
                 
             else if parking_lot.isSelected && spot.type == 1 {
                 let newview = result_view(frame: CGRect(x: 0, y: (h+10)*(i), width: Int(w), height: h))
-                //let a = newview.time_distance
                 
                 newview.type_icon.image = UIImage(named: "parking_lot")
                 newview.time_distance.text = "5 min"
                 newview.total_price.text = "U$" + String(format: "%.2f", spot.min_price_hour)
                 
+                let tap = UITapGestureRecognizer(target: self, action: #selector(result_selected(sender:)))
+                newview.addGestureRecognizer(tap)
+                newview.isUserInteractionEnabled = true
+                
                 self.list_view.addSubview(newview)
+                
                 i = i+1
             }
         }
     }
     
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func result_selected(sender: UITapGestureRecognizer) {
+        print("clicked")
+        self.performSegue(withIdentifier: "result_segue", sender: nil)
     }
-    */
 
 }
