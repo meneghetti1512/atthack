@@ -39,6 +39,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="show:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="355-kc-vVo"/>
+                                    <action selector="textFieldChange:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="qfN-mK-hwY"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" alpha="0.55000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEk-Gf-TEs">
