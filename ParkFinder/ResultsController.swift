@@ -64,17 +64,20 @@ class ResultsController: UIViewController, UIScrollViewDelegate, UIGestureRecogn
             if (parking_lot.isSelected && spot.type == 1) || (private_parking.isSelected && spot.type == 2)  {
                 let newview = result_view(frame: CGRect(x: 0, y: (h + 10) * (i), width: Int(w), height: h))
                 
+                newview.name.text = spot.name ?? "-"
+                newview.picture.image = UIImage(named: spot.picture)
                 newview.type_icon.image = UIImage(named: (spot.type == 1) ? "parking_lot" : "house")
+                
+                newview.hour_price.text = "U$ " + String(format: "%.2f", spot.min_price_hour)
                 newview.time_distance.text = "5 min"
-                newview.total_price.text = "U$" + String(format: "%.2f", spot.min_price_hour)
+                newview.rating.text = String(format: "%.1f", spot.rating)
                 
                 // Add Gesture Recognizer
                 let tap = UITapGestureRecognizer(target: self, action: #selector(result_selected(sender:)))
                 newview.addGestureRecognizer(tap)
                 newview.isUserInteractionEnabled = true
                 
-                newview.spot = spot
-                
+                    newview.spot = spot
                 self.scroll_view.addSubview(newview)
                 i = i + 1
             }

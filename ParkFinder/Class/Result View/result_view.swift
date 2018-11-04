@@ -10,9 +10,14 @@ import UIKit
 
 class result_view: UIView {
     @IBOutlet var view: UIView!
+    @IBOutlet weak var picture: UIImageView!
     @IBOutlet weak var type_icon: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var hour_price: UILabel!
+    @IBOutlet weak var address: UILabel!
     @IBOutlet weak var time_distance: UILabel!
-    @IBOutlet var total_price: UILabel!
+    @IBOutlet weak var rating: UILabel!
+    
     var spot:parking_spot?
     
     required init?(coder aDecoder: NSCoder) {
