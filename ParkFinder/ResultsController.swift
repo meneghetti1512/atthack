@@ -19,7 +19,7 @@ class ResultsController: UIViewController, UIScrollViewDelegate, UIGestureRecogn
     @IBOutlet weak var time_range_text: UILabel!
     
     var selected_spot:parking_spot?
-    var selected_time:(start: Int, end: Int)?
+    var selected_time:String?
     
     var array  = [parking_spot]()
     var min_time = Int()
@@ -66,7 +66,7 @@ class ResultsController: UIViewController, UIScrollViewDelegate, UIGestureRecogn
                 newview.type_icon.image = UIImage(named: (spot.type == 1) ? "parking_lot" : "house")
                 newview.address.text = spot.address
                 newview.hour_price.text = "U$ " + String(format: "%.2f", spot.min_price_hour)
-                newview.time_distance.text = String(Int.random(in: 31 ... 38))+" min"
+                newview.time_distance.text = String(Int.random(in: 3 ... 14))+" min"
                 newview.rating.text = String(format: "%.1f", spot.rating)
                 
                 // Add Gesture Recognizer
@@ -87,6 +87,7 @@ class ResultsController: UIViewController, UIScrollViewDelegate, UIGestureRecogn
     @objc func result_selected(sender: UITapGestureRecognizer) {
         if let view = sender.view as? result_view {
             selected_spot = view.spot
+            selected_time = view.time_distance.text
             self.performSegue(withIdentifier: "result_segue", sender: nil)
         }
     }
@@ -98,6 +99,7 @@ class ResultsController: UIViewController, UIScrollViewDelegate, UIGestureRecogn
             let vc = segue.destination as! CheckoutController
             vc.parkingSpot = selected_spot
             vc.reservation = self.time_range_text.text
+            vc.time = selected_time
         }
     }
 

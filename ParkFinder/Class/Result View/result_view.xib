@@ -34,7 +34,7 @@
                         <constraint firstAttribute="width" constant="30" id="eXN-dJ-SMV"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parking-spot" translatesAutoresizingMaskIntoConstraints="NO" id="RRG-rf-wYX">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parking-spot" translatesAutoresizingMaskIntoConstraints="NO" id="RRG-rf-wYX">
                     <rect key="frame" x="16" y="13" width="120" height="120"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="3sQ-Df-pGa"/>

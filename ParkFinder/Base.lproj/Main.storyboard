@@ -38,7 +38,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="show:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="355-kc-vVo"/>
                                     <action selector="textFieldChange:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="qfN-mK-hwY"/>
                                 </connections>
                             </textField>
@@ -73,6 +72,7 @@
                                 <color key="backgroundColor" red="0.001036897302" green="0.35821413990000001" blue="0.75384753940000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="0j9-4K-yHh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="AI0-gb-gDV"/>
                                     <constraint firstAttribute="height" constant="40" id="ueq-Gl-tjn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -95,7 +95,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="hAG-3a-tTi" kind="show" id="za9-KQ-6QY"/>
+                                    <action selector="clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cJS-u4-J1Q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -114,6 +114,7 @@
                         <outlet property="map" destination="PG6-rp-QSD" id="eJd-mP-xKd"/>
                         <outlet property="newspot" destination="uEk-Gf-TEs" id="avt-8N-fZ9"/>
                         <outlet property="settings" destination="Qiy-ma-wER" id="GEs-mt-Yn4"/>
+                        <segue destination="hAG-3a-tTi" kind="show" identifier="segue_1" id="sXJ-qf-w1g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -243,6 +244,9 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Checkout"/>
+                                <connections>
+                                    <action selector="openmaps:" destination="gWI-H7-t9a" eventType="touchUpInside" id="SBU-oV-VrW"/>
+                                </connections>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dvP-mW-gos">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="506.5"/>
@@ -375,7 +379,7 @@
         <image name="settings" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="za9-KQ-6QY"/>
+        <segue reference="Rq8-OG-1Lr"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>

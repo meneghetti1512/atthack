@@ -14,6 +14,7 @@ import CoreLocation
 class CheckoutController: UIViewController {
     var parkingSpot: parking_spot?
     var reservation: String?
+    var time: String?
     @IBOutlet weak var address: UILabel!
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var distance: UILabel!
@@ -56,19 +57,38 @@ class CheckoutController: UIViewController {
            self.map.addAnnotation(annotation)
             self.map.setRegion(MKCoordinateRegion(center: coordinate, span: span), animated: true)
         }
-        
-        
-        
     }
     
+    @IBAction func openmaps(_ sender: UIButton) {
+        let address = parkingSpot?.address
+        coordinates(forAddress: address ?? "" ) {
+            (location) in
+            guard let location = location else {
+                // Handle error here.
+                return
+            }
+            let lat = location.latitude
+            let long = location.longitude
+        let regionDistance:CLLocationDistance = 10000
+        let coordinates = CLLocationCoordinate2DMake(lat, long)
+            let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
+        let options = [
+            MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
+            MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)
+        ]
+        let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = address
+        mapItem.openInMaps(launchOptions: options)
+        }
+    }
     //this is working
     override func viewDidLoad() {
         super.viewDidLoad()
         address.text = parkingSpot?.address
         self.reservation_time.text = self.reservation
         price.text = String(format: "U$ %.2f", parkingSpot?.min_price_hour ?? 0.0)
-        distance.text = "5 miles"
+        distance.text = time
         openMapForPlace()
-        
     }
 }

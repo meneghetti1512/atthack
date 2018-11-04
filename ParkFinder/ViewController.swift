@@ -83,6 +83,9 @@ class ViewController: UIViewController{
         }
     }
     
+    @IBAction func clicked(_ sender: Any) {
+        self.performSegue(withIdentifier: "segue_1", sender: self)
+    }
     
     //this is working
     override func viewDidLoad() {
