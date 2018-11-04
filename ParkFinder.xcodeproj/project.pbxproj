@@ -131,13 +131,13 @@
 			isa = PBXGroup;
 			children = (
 				40E7A4F5218D34DE007E6300 /* AppDelegate.swift */,
-				DB8283F1218D8FBA007C21EC /* ResultsController.swift */,
 				40E7A4F9218D34DE007E6300 /* Main.storyboard */,
 				40E7A4F7218D34DE007E6300 /* ViewController.swift */,
+				DB8283F1218D8FBA007C21EC /* ResultsController.swift */,
+				C0DEAE3C218DFACD00F2469E /* CheckoutController.swift */,
 				40E7A4FC218D34E0007E6300 /* Assets.xcassets */,
 				40E7A501218D34E0007E6300 /* Info.plist */,
 				40E7A4FE218D34E0007E6300 /* LaunchScreen.storyboard */,
-				C0DEAE3C218DFACD00F2469E /* CheckoutController.swift */,
 				DB8283F0218D8E43007C21EC /* Class */,
 			);
 			path = ParkFinder;
